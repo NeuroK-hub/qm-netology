@@ -4,8 +4,8 @@ body {
   
 @font-face {
     font-family: "Open Sans";
-    src: url(/fonts/OpenSans-Regular.woff);
-    src: url(/fonts/OpenSans-Bold.woff);
+    src: url(../fonts/OpenSans-Bold.woff);
+    src: url(../fonts/OpenSans-Regular.woff);
   }
 
   .page {
@@ -13,19 +13,40 @@ body {
     font-family: "Open Sans";
   }
   
+
+  @media (min-width:1200px) {
   .header {
-    background-image: url("/img/banner-bg.jpg");
+    background-image: url(../img/banner-bg.jpg);
     position: relative;
     min-width: 1200px;
-    height: 450px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    color: #fff;
-    text-transform: uppercase;
-    z-index: 3;
+    height: 450px;}
+
+    
+    .logo {
+
+      padding-top: 29px;
+      padding-left: 248px;
+
+    }
   }
-  
+  @media (min-width:641px) and (max-width:1200px) {
+    .header {
+      background-image: url(../img/banner-bg-tablet.jpg);
+      position: relative;
+      min-width: 768px;
+      height: 392px;
+      
+  }
+}
+
+/* постоянные стили*/
+.header {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  text-transform: uppercase;
+}
   .header::after {
     content: "";
     background-color: #000;
@@ -40,8 +61,6 @@ body {
   .logo {
     height: 46px;
     width: 190px;
-    padding-top: 29px;
-    padding-left: 248px;
     position: relative;
     z-index: 3;
   }
