@@ -263,15 +263,13 @@ body {
 
 
 .tags-entry__list {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
+  list-style: none; 
 }
 
 .tags-entry__item {
   padding: 0;
   margin-right: 10px;
+  display: inline;
 }
 
 .tags-entry__link {
