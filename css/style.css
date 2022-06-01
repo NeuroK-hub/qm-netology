@@ -43,16 +43,13 @@ body {
   }
 
 
-  .trend-cart {
-    width: 410px;
-    height: 320px;
-    box-sizing: border-box;
-  }
+  
   .trend-card__body{
     width: 410px;
     height: 320px;
-    background-image: url(../img/trend1.jpg);
   }
+
+
 
 }
 
@@ -211,9 +208,7 @@ body {
 }
 
 /* карточки тренды */
-.container {
-  box-sizing: border-box;
-}
+
 
 .trends-blok {
   text-align: center;
@@ -223,12 +218,6 @@ body {
 }
 
 
-.trends {
-  margin-top: 24px;
-  display: flex;
-  text-transform: uppercase;
-  text-align: center;
-}
 .new-post-line {
   background-color: rgb(181, 159, 91);
   opacity: 0.4;
@@ -240,14 +229,40 @@ body {
 }
 
 
+.trends {
+  margin-top: 24px;
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content:space-between;
+}
 
 
 
-.trend-cart:after {
+
+
+.trend-cart{
+  background-image: url(../img/trend1.jpg);
+  position: relative;
+}
+
+.trend-cart::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.6);
-  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
+.trend-card__body {
+  position: relative;
+}
+
+
+
+
+
 
 .tags-entry__list {
   padding: 0;
@@ -255,6 +270,11 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+
+
+
+
 
 .tags-entry__item {
   padding: 0;
