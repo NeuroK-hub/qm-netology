@@ -216,12 +216,15 @@ body {
 
 /* карточки тренды */
 .trends {
+  margin-top: 29px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
+  justify-content: space-around;
 }
 .trend-cart {
   position: relative;
+  
 }
 
 .trend-cart::after {
@@ -247,7 +250,15 @@ body {
   left: 0;
   bottom: 0;
   z-index: 3;
+  border: #b59f5b 3px solid;
+  margin-bottom: 15px;
 }
+
+
+
+
+
+
 
 
 
@@ -285,4 +296,17 @@ body {
 
 .title-entry__link:hover {
   color: rgb(181, 159, 91);
+}
+
+.trend-card__name {
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+}
+
+.trend-card__name:hover {
+  color: #b59f5b;
 }
