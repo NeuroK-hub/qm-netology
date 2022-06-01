@@ -233,7 +233,6 @@ body {
   margin-top: 24px;
   display: flex;
   text-transform: uppercase;
-  text-align: center;
   justify-content:space-between;
 }
 
@@ -256,8 +255,24 @@ body {
 }
 .trend-card__body {
   position: relative;
+  bottom: auto;
+  border: #b59f5b solid 3px;
+  margin-bottom: 16px;
+  margin-left: 18px;
+  margin-right: 18px;
+  padding: 39px 34px 33px 34px;
 }
 
+.trend-card__name {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.trend-card__name:hover {
+  color: #b59f5b;
+}
 
 
 
@@ -284,7 +299,7 @@ body {
   text-decoration: none;
   list-style: none;
   font-size: 14px;
-  color: rgb(181, 159, 91);
+  color: #b59f5b;
   font-weight: bold;
   text-transform: uppercase;
 }
