@@ -1,311 +1,279 @@
 body {
-  margin: 0;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Bold.woff);
-  src: url(../fonts/OpenSans-Regular.woff);
-}
-
-.page {
-  width: 100%;
-  font-family: "Open Sans";
-}
-
-
-@media (min-width:1200px) {
-  .header {
-    background-image: url(../img/banner-bg.jpg);
-    position: relative;
-    min-width: 1200px;
-    height: 450px;
-    background-position: center center;
-  }
-
-
-  .logo {
-    padding-top: 29px;
-    padding-left: 248px;
-  }
-
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-
-  .title {
-    line-height: 75pt;
-    font-size: 45px;
-    width: 55%;
-  }
-
-
-}
-
-@media (min-width:641px) and (max-width:1200px) {
-
-
-
-  .header {
-    background-image: url(../img/banner-bg-tablet.jpg);
-    position: relative;
-    min-width: 768px;
-    height: 392px;
-  }
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    padding-top: 50px;
-    padding-left: 35px;
-  }
-
-  .title {
-    line-height: 55pt;
-    font-size: 40px;
-    width: 596px;
-    justify-content: center;
-  }
-
-
-
-
-  
-}
-
-
-/*      мобилка     */
-
-
-@media (max-width:640px) {
-
-
-  .header {
-    background-image: url(../img/banner-mobile.jpg);
-    position: relative;
-    min-width: 361px;
-    height: 640px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-
-
-  .logo {
-    padding-top: 225px;
-    left: auto;
-    right: auto;
-    justify-content: center;
-
-
-  }
-
-  .title {
-    line-height: 36pt;
-    width: 277px;
-    height: 91px;
-    font-size: 26px;
-  }
-
-
-}
-
-/* бургер в меню*/
-
-
-
-
-/* постоянные стили*/
-.header {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.header::after {
-  content: "";
-  background-color: #000;
-  opacity: 0.6;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.logo {
-  height: 46px;
-  z-index: 3;
-}
-
-.title {
-  font-weight: bold;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 3;
-
-}
-
-.container {
-  margin: 0;
-  justify-content: space-between;
-  position: relative;
-  z-index: 3;
-}
-
-.menu {
-  padding-top: 45px;
-  padding-right: 10%;
-}
-
-.menu-list {
-  margin-top: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.menu-link {
-  text-decoration: none;
-  list-style: none;
-  font-size: 16px;
-  color: inherit;
-}
-
-.menu-link:hover {
-  text-decoration: underline #fff;
-}
-
-.menu-list-item:nth-child(n + 2) {
-  margin-left: 33px;
-}
-
-
-
-
-.trends-blok {
-  text-align: center;
-  text-transform: uppercase;
-  position: relative;
-  display: block;
-}
-
-
-.new-post-line {
-  background-color: rgb(181, 159, 91);
-  opacity: 0.4;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  width: 66px;
-  height: 3px;
-}
-
-
-/* карточки тренды */
-.trends {
-  margin-top: 29px;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-around;
-}
-.trend-cart {
-  position: relative;
-  
-}
-
-.trend-cart::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-
-.img1 {
-  max-width: 100%;
-  display: block;
-}
-
-.trend-card__body {
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 3;
-  border: #b59f5b 3px solid;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-
-
-
-
-
-
-
-
-
-.tags-entry__list {
-  list-style: none; 
-}
-
-.tags-entry__item {
-  padding: 0;
-  margin-right: 10px;
-  display: inline;
-}
-
-.tags-entry__link {
-  text-decoration: none;
-  list-style: none;
-  font-size: 14px;
-  color: #b59f5b;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.tags-entry__link:hover {
-  text-decoration: underline #b59f5b;
-}
-
-.title-entry__link {
-  text-decoration: none;
-  list-style: none;
-  color: #000;
-  text-transform: uppercase;
-}
-
-.title-entry__link:hover {
-  color: rgb(181, 159, 91);
-}
-
-.trend-card__name {
-  font-size: 20px;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  list-style: none;
-  text-decoration: none;
-}
-
-.trend-card__name:hover {
-  color: #b59f5b;
-}
+   margin: 0;
+ }
+ 
+ @font-face {
+   font-family: "Open Sans";
+   src: url(../fonts/OpenSans-Bold.woff);
+   src: url(../fonts/OpenSans-Regular.woff);
+ }
+ 
+ .page {
+   width: 100%;
+   font-family: "Open Sans";
+ }
+ 
+ @media (min-width: 1200px) {
+   .header {
+     background-image: url(../img/banner-bg.jpg);
+     position: relative;
+     min-width: 1200px;
+     height: 450px;
+     background-position: center center;
+   }
+ 
+   .logo {
+     padding-top: 29px;
+     padding-left: 248px;
+   }
+ 
+   .container {
+     display: flex;
+     flex-wrap: wrap;
+   }
+ 
+   .title {
+     line-height: 75pt;
+     font-size: 45px;
+     width: 55%;
+   }
+ }
+ 
+ @media (min-width: 641px) and (max-width: 1200px) {
+   .header {
+     background-image: url(../img/banner-bg-tablet.jpg);
+     position: relative;
+     min-width: 768px;
+     height: 392px;
+   }
+ 
+   .container {
+     display: flex;
+     flex-wrap: wrap;
+   }
+ 
+   .logo {
+     padding-top: 50px;
+     padding-left: 35px;
+   }
+ 
+   .title {
+     line-height: 55pt;
+     font-size: 40px;
+     width: 596px;
+     justify-content: center;
+   }
+ }
+ 
+ /*      мобилка     */
+ 
+ @media (max-width: 640px) {
+   .header {
+     background-image: url(../img/banner-mobile.jpg);
+     position: relative;
+     min-width: 361px;
+     height: 640px;
+   }
+ 
+   .container {
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+ 
+   .logo {
+     padding-top: 225px;
+     left: auto;
+     right: auto;
+     justify-content: center;
+   }
+ 
+   .title {
+     line-height: 36pt;
+     width: 277px;
+     height: 91px;
+     font-size: 26px;
+   }
+ }
+ 
+ /* бургер в меню*/
+ 
+ /* постоянные стили*/
+ .header {
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-size: cover;
+   color: #fff;
+   text-transform: uppercase;
+ }
+ 
+ .header::after {
+   content: "";
+   background-color: #000;
+   opacity: 0.6;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+ }
+ 
+ .logo {
+   height: 46px;
+   z-index: 3;
+ }
+ 
+ .title {
+   font-weight: bold;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   z-index: 3;
+ }
+ 
+ .container {
+   margin: 0;
+   justify-content: space-between;
+   position: relative;
+   z-index: 3;
+ }
+ 
+ .menu {
+   padding-top: 45px;
+   padding-right: 10%;
+ }
+ 
+ .menu-list {
+   margin-top: 0;
+   list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
+ .menu-link {
+   text-decoration: none;
+   list-style: none;
+   font-size: 16px;
+   color: inherit;
+ }
+ 
+ .menu-link:hover {
+   text-decoration: underline #fff;
+ }
+ 
+ .menu-list-item:nth-child(n + 2) {
+   margin-left: 33px;
+ }
+ 
+ .trends-blok {
+   text-align: center;
+   text-transform: uppercase;
+   position: relative;
+   display: block;
+ }
+ 
+ .new-post-line {
+   background-color: rgb(181, 159, 91);
+   opacity: 0.4;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   width: 66px;
+   height: 3px;
+ }
+ 
+ /* карточки тренды */
+ .trends {
+   margin-top: 29px;
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: space-around;
+ }
+ .trend-cart {
+   position: relative;
+ }
+ 
+ .trend-cart::after {
+   content: "";
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   position: absolute;
+   top: 0;
+   left: 0;
+ }
+ 
+ .img1 {
+   max-width: 100%;
+   display: block;
+ }
+ 
+ .trend-card__body {
+   box-sizing: border-box;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   z-index: 3;
+   border: #b59f5b 3px solid;
+   margin-bottom: 15px;
+   margin-left: 15px;
+   margin-right: 15px;
+   padding: 0px 34px 37px 34px;
+ }
+ 
+ .trend-card__body > .tags-entry__list {
+   margin-bottom: 5px;
+ }
+ 
+ .tags-entry__list {
+   list-style: none;
+   padding: 0;
+ }
+ 
+ .tags-entry__item {
+   padding: 0;
+   margin-right: 10px;
+   display: inline;
+ }
+ 
+ .tags-entry__link {
+   text-decoration: none;
+   list-style: none;
+   font-size: 14px;
+   color: #b59f5b;
+   font-weight: bold;
+   text-transform: uppercase;
+ }
+ 
+ .tags-entry__link:hover {
+   text-decoration: underline #b59f5b;
+ }
+ 
+ .title-entry__link {
+   text-decoration: none;
+   list-style: none;
+   color: #000;
+   text-transform: uppercase;
+ }
+ 
+ .title-entry__link:hover {
+   color: rgb(181, 159, 91);
+ }
+ 
+ .trend-card__name {
+   font-size: 20px;
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: bold;
+   list-style: none;
+   text-decoration: none;
+   margin-bottom: 37px;
+ }
+ 
+ .trend-card__name:hover {
+   color: #b59f5b;
+ }
+ 
+ /* main */
+ 
