@@ -190,9 +190,15 @@ body {
    margin-right: auto;
    justify-content: space-around;
  }
+
+
  .trend-cart {
    position: relative;
  }
+
+
+
+ 
  
  .trend-cart::after {
    content: "";
@@ -275,5 +281,5 @@ body {
    color: #b59f5b;
  }
  
- /* main */
+ /* посты */
  
