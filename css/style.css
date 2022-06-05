@@ -235,6 +235,11 @@ body {
     font-size: 15px;
     line-height: 22px;
   }
+
+  .post-list:nth-child(-n +5) { 
+    margin-top: 20px;
+    border-bottom: rgb(238, 238, 238) 3px solid;
+  }
   /* сайтбар на планшет */
   .sidebar {
     margin-left: 35px;
@@ -388,6 +393,11 @@ body {
     font-size: 15px;
     line-height: 22px;
   }
+  .post-list:nth-child(n+1) { 
+    margin-top: 17px;
+    border-bottom: rgb(238, 238, 238) 3px solid;
+  }
+
   /* сайтбар на телефон */
   .sidebar {
     width: 98%;
@@ -830,3 +840,4 @@ p {
   font-weight: bold;
   color: #b59f5b;
 }
+
