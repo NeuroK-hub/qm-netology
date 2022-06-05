@@ -37,8 +37,13 @@ body {
      font-size: 45px;
      width: 55%;
    }
+   .trend-cart {
+    width: 25%;
+   }
  }
  
+/* Планшет */
+
  @media (min-width: 641px) and (max-width: 1200px) {
    .header {
      background-image: url(../img/banner-bg-tablet.jpg);
@@ -47,7 +52,7 @@ body {
      height: 392px;
    }
  
-   .container {
+   .trends {
      display: flex;
      flex-wrap: wrap;
    }
@@ -63,6 +68,14 @@ body {
      width: 596px;
      justify-content: center;
    }
+
+
+   .trend-cart {
+     flex-wrap: wrap;
+     width: 50%;
+   }
+
+
  }
  
  /*      мобилка     */
@@ -94,6 +107,11 @@ body {
      height: 91px;
      font-size: 26px;
    }
+
+   .trend-cart {
+    flex-wrap: wrap;
+   }
+
  }
  
  /* бургер в меню*/
@@ -186,6 +204,7 @@ body {
  .trends {
    margin-top: 29px;
    display: flex;
+   flex-wrap: wrap;
    margin-left: auto;
    margin-right: auto;
    justify-content: space-around;
@@ -197,8 +216,15 @@ body {
  }
 
 
+ .trend-img {
+  max-width: 100%;
+  display: block;
+}
 
- 
+
+
+
+
  
  .trend-cart::after {
    content: "";
@@ -210,11 +236,7 @@ body {
    left: 0;
  }
  
- .img1 {
-   max-width: 100%;
-   display: block;
- }
- 
+
  .trend-card__body {
    box-sizing: border-box;
    position: absolute;
