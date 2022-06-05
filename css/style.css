@@ -13,6 +13,8 @@ body {
    font-family: "Open Sans";
  }
  
+/* Компьютерная версия */
+
  @media (min-width: 1200px) {
    .header {
      background-image: url(../img/banner-bg.jpg);
@@ -38,8 +40,56 @@ body {
      width: 55%;
    }
    .trend-cart {
-    width: 25%;
+    flex-wrap: nowrap;
    }
+
+   .tags-entry__link {
+     font-size: 14px;
+   }
+   .trend-card__name{
+     font-size: 20px;
+     line-height: 24px;
+   }
+
+
+  .content {
+    margin-top: 64px;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+
+   main{
+    max-width: 778px;
+   }
+
+   .post-list {
+    display: flex;
+    margin-bottom: 60px;
+  }
+
+  .post-img {
+    height: 294px;
+    margin-right: 30px;
+  }
+
+  .entry__datetime {
+    font-size: 13px;
+    line-height: 40px;
+  }
+
+  .author-entry__link {
+    font-size: 13px;
+    line-height: 40px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 22px;
+
+ }
+
  }
  
 /* Планшет */
@@ -70,15 +120,18 @@ body {
    }
 
 
-   .trend-cart {
-     flex-wrap: wrap;
-     width: 50%;
-   }
 
+   .tags-entry__link {
+    font-size: 14px;
+  }
+  .trend-card__name{
+    font-size: 17px;
+    line-height: 22px;
+  }
 
  }
  
- /*      мобилка     */
+ /*      мобильная версия     */
  
  @media (max-width: 640px) {
    .header {
@@ -108,13 +161,21 @@ body {
      font-size: 26px;
    }
 
-   .trend-cart {
+   .trends {
     flex-wrap: wrap;
    }
 
+   .tags-entry__link {
+    font-size: 14px;
+  }
+  .trend-card__name{
+    font-size: 16px;
+    line-height: 20px;
+  }
+
  }
  
- /* бургер в меню*/
+ /* бургер в меню  (в процессе)*/
  
  /* постоянные стили*/
  .header {
@@ -204,7 +265,6 @@ body {
  .trends {
    margin-top: 29px;
    display: flex;
-   flex-wrap: wrap;
    margin-left: auto;
    margin-right: auto;
    justify-content: space-around;
@@ -222,10 +282,6 @@ body {
 }
 
 
-
-
-
- 
  .trend-cart::after {
    content: "";
    width: 100%;
@@ -268,7 +324,6 @@ body {
  .tags-entry__link {
    text-decoration: none;
    list-style: none;
-   font-size: 14px;
    color: #b59f5b;
    font-weight: bold;
    text-transform: uppercase;
@@ -290,7 +345,6 @@ body {
  }
  
  .trend-card__name {
-   font-size: 20px;
    color: #fff;
    text-transform: uppercase;
    font-weight: bold;
@@ -304,4 +358,46 @@ body {
  }
  
  /* посты */
- 
+
+ .content {
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+
+ main {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.post-list {
+  display: flex;
+}
+
+.post-img {
+  background-color: rgb(239, 246, 241);
+}
+
+.entry__datetime {
+  color: rgb(136, 136, 136);
+  text-align: left;
+}
+
+.author-entry__link {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: left;
+}
+
+  p {
+  color: inherit;
+}
+
+
+/* сайтбар */
+
